@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de usuario</title>
+</head>
+
+<body background="./imagenes/logomarcadeagua.jpg">
+    <form action="show_data.html">
+        <h2>Formulario de Registro de Usuario</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre aquí" required><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" required><br>
+        Dirección: <br>
+        <label for="calle">Calle</label>
+        <input type="text" name="calle" id="calle">
+        <label for="altura">Altura</label>
+        <input type="numero" name="altura" id="altura"><br>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha"><br>
+        <label for="mail">E-mail</label>
+        <input type="email" name="mail" id="mail" required><br>
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo">
+            <option value="b"></option>
+            <option value="f">Femenino</option>
+            <option value="m">Masculino</option>
+            <option value="nb">No binario</option>
+        </select> <br>
+        Pedido: <br>
+        <input type="checkbox" name="pedido" value="jabon de cacao">Jabón de cacao <br>
+        <input type="checkbox" name="pedido" value="jabon de aloe vera" id="jabon de aloe vera">Jabón de aloe vera <br>
+        <input type="checkbox" name="pedido" value="jabon exfoliante de cafe" id="jabon exfoliante de cafe">Jabón exfoliante de café <br>
+        <input type="checkbox" name="pedido" value="jabon de avena" id="jabon de avena">Jabón de avena <br>
+        <input type="checkbox" name="pedido" value="jabon de lavar" id="jabon de lavar">Jabón de lavar <br>
+   Tamaño del jabón: <br>
+   <input type="radio" name="pequeño" id="pequeño">Pequeño <br>
+   <input type="radio" name="mediano" id="mediano">Mediano <br>
+   <input type="radio" name="grande" id="grande"> Grande <br>
+   <label for="comentarios">Comentarios</label>
+   <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+
+        <br><br><input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
